@@ -1,0 +1,344 @@
+/* Css Toàn Trang */
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url("img/background-6.jpg");
+    background-size: cover;
+}
+section
+{
+    margin-bottom: 20px;
+}
+h1
+{
+    color: rgb(197, 10, 10);
+    text-shadow: -1px 1px 0px #51c551,
+                 -2px 2px 0px #51c551,
+                 -3px 3px 0px #51c551;
+}
+h4,li
+{
+    font-family: cursive;
+}
+/* Css Cho Tieu De Trang */
+.mao ul
+{
+    display: flex;
+}
+.mao ul li
+{
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 15px;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+    0%{color: #fff;text-shadow: none}
+    90%{color: rgb(248, 247, 247);text-shadow: none}
+    100%{text-shadow: red}
+}
+.mao ul li:nth-child(1){color:red;animation-delay: .2s}
+.mao ul li:nth-child(2){color:blue;animation-delay: .4s}
+.mao ul li:nth-child(3){color:yellow;animation-delay: .6s}
+.mao ul li:nth-child(4){color:purple;animation-delay: .8s}
+.mao ul li:nth-child(5){color:lime;animation-delay: 1s}
+.mao ul li:nth-child(6){color:aqua;animation-delay: 1.2s}
+
+
+/* css Phần Load web */
+.loadweb{opacity: 0;}
+.goweb
+{
+    animation:  go 1s ease forwards;
+}
+@keyframes go
+{
+    from
+    {
+        transform: translateY(100px) rotateY(90deg);opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0) rotateY(0);opacity: 1;
+    }
+}
+
+/* Css Phan Slider Car Su Dung Thu  Vien Swiper */
+#slide_car
+{
+    /* background: url("img/background-5.jpg"); */
+    background: #000;
+    background-size: cover;
+
+}
+/* #header
+{
+    width: 100%;
+    height: 100vh;
+    background: url("img/cover.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    color: #fff;
+} */
+/* css Phan Menu NavBar Header */
+ a.nav-link
+{
+    color: #fff;
+   
+    font-size: 20px;
+    font-family: serif;
+}
+a.nav-link:hover
+{
+    color: red;
+    border-bottom: 1px solid #fff;
+}
+.nav li
+{
+    position: relative;
+}
+.submenu
+{ 
+    position: absolute;
+    top: 50px;
+    left:-50px;
+    border: 1px solid gray;
+    background: mediumvioletred;
+    opacity: 0;
+    transition: 0.4s;
+}
+.submenu a
+{
+    border-bottom: 1px solid gray;
+}
+.nav > li:hover > .submenu
+{
+    opacity: 1;
+}
+#dangki i{margin-left: 20px;font-size: 28px}
+.button:hover
+{
+padding-right: 30px;
+transition: 0.6s;
+}
+/* Css Form Login */
+.login_header
+{
+    background: peru;
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    box-shadow: 1px  10px 10px red;
+    border-radius: 30px;
+    opacity: 0; 
+    transition: 0.6s;
+    float:right;
+} 
+.login_new
+{
+    position: absolute;
+    top: 50%;
+    transform: rotate(360deg);
+    opacity: 1;
+}
+/* slider carousel */
+#slider
+{
+    width: 100%;
+    height: 330px;
+    border: 1px solid rgb(63, 221, 84);
+    box-shadow: 5px 5px 5px 5px rgb(231, 227, 227);
+}
+#slider .image
+{
+    width: 100%;
+    max-height: 330px;
+    background-size: cover;
+}
+/*Swiprier */
+#slide_car
+{
+    width: 100%;
+    height: 400px;
+}
+.swiper-slide:nth-child(1){background-image:url(../img/oto15.jpg)}
+.swiper-slide:nth-child(2){background-image:url(../img/oto17.jpg)}
+.swiper-slide:nth-child(3){background-image:url(../img/oto13.jpg)}
+.swiper-slide:nth-child(4){background-image:url(../img/oto4.jpg)}
+.swiper-slide:nth-child(5){background-image:url(../img/oto1.jpg)}
+.swiper-slide:nth-child(6){background-image:url(../img/oto2.jpg)}
+.swiper-slide:nth-child(7){background-image:url(../img/ot03.jpg)}
+.swiper-slide .bt
+{
+    position: absolute;
+    bottom:-20px;
+    right: 50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.swiper-slide:hover .bt
+{
+    bottom:20px;
+    opacity: 1;
+}
+/* Phan COntent */
+.noidung
+{
+    height:250px;
+    border-radius: 5px;
+     box-shadow: 2px 5px 10px rgb(145, 139, 139); 
+}
+.noidung h2
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(248, 0, 0);
+    transition: 0.4s;
+}
+.noidung:hover h2
+{
+    left: 50px;
+    bottom: 120px;
+}
+
+.noidung img
+{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.noidung:hover
+{
+     box-shadow: 5px 10px 15px 5px rgb(15, 15, 15); 
+    border: 1px solid lime;
+}
+
+.noidung::before
+{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: rgb(29, 30, 31);
+    opacity: 0;
+    transition: 0.4s;
+}
+.noidung:hover:before
+{
+    opacity: 0.3;
+}
+/* Css : Text Trong Noi DUng */
+.noidung .text
+{
+    color: lime;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.6s;
+}
+.noidung:hover .text
+{
+    opacity: 1;
+    bottom: 80px;
+    left: 50px;
+}
+/* End Text */
+/* Start Nut an Trong Noi DUng */
+.noidung .nut
+{
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    opacity: 0;
+    transition: 0.8s;
+}
+.noidung:hover .nut
+{
+    opacity: 1;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Phan Gioi Thieu Thong Tin Tung Xe */
+h2.title
+{
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: purple;
+    text-shadow: 1px 4px 5px red;
+    margin-bottom: 20px;
+}
+.img_display
+{
+    display: none;
+    margin-bottom: 20px;
+}
+.img_display img
+{
+    width: 100%;
+}
+
+img
+{
+    vertical-align: middle;
+}
+.img_con
+{
+    width: 100%;
+    margin-right: 5px;
+}
+.img_con:hover
+{
+    border: 2px solid lime;
+}
+img.zoom:hover
+{
+    transition: 0.3s;
+    transform: scale(1.3);
+}
+.tittle_icon
+{
+    width: 100%;
+    border: 1px solid gray;
+    background: #fff;
+}
+.tittle_icon h4
+{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+/* Css Phan Footer */
+#list_footer
+{
+    background: url("../img/background_footer.jpg");
+}
+#list_footer h4
+{
+    color: blue;
+}
+#list_footer li 
+{
+margin-bottom: 10px;
+}
+#list_footer li:hover
+{
+    border-bottom: 1px solid red;
+    color: lime;
+}
+#list_footer .gachngang
+{
+    width: 50%;
+    height: 3px;
+    margin: auto;
+    background: red;
+}
+
